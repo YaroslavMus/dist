@@ -1,0 +1,549 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-BlackItalic.woff2") format("woff2"), url("../fonts/Montserrat-BlackItalic");
+  font-weight: BlackItalic;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBoldItalic");
+  font-weight: ExtraBoldItalic;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic");
+  font-weight: MediumItalic;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular");
+  font-weight: Regular;
+  font-style: normal;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1170px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.button-org {
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  background: #00950f;
+  transition: all 0.5s;
+}
+.button-org:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > div {
+  margin: 0px 0px 0px 10px;
+}
+.logo > div div:nth-child(1) {
+  font-weight: 900;
+  font-size: 24.2553px;
+  line-height: 30px;
+  color: #000000;
+}
+.logo > div div:nth-child(1) span {
+  color: #ffbe18;
+}
+.logo > div div:nth-child(2) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d9fbb;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  transition: all 0.5s;
+}
+.phone:hover {
+  opacity: 0.6;
+}
+
+header .header-top,
+header .header-top-left,
+header .header-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-top {
+  padding: 25px 0px 15px 0px;
+  border-bottom: 1px solid rgba(0, 149, 15, 0.2);
+}
+header .header-top .header-top-left .logo {
+  margin: 0px 38px 0px 0px;
+}
+header .header-top .header-top-left button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #000000;
+}
+header .header-top .header-top-left button span {
+  border-bottom: 1.5px dashed rgba(255, 254, 252, 0);
+}
+header .header-top .header-top-left button:hover span {
+  border-bottom: 1.5px dashed #ffbe18;
+}
+header .header-top .header-top-left button img {
+  margin: 0px 5px 0px 0px;
+}
+header .header-top .header-top-right div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0px 17.5px 0px 0px;
+}
+header .header-top .header-top-right div span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d9fbb;
+}
+header .header-top .header-top-right div a {
+  margin: 0px 0px 3px 0px;
+}
+header .header-top .header-top-right button {
+  margin: 0px 0px 0px 17.5px;
+}
+header .header-bottom {
+  padding: 15px 0px 15px 0px;
+}
+header .header-bottom .menu {
+  display: flex;
+  grid-gap: 50px;
+}
+header .header-bottom .menu a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 149, 15, 0);
+  transition: all 0.3s;
+}
+header .header-bottom .menu a:hover {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+header .header-bottom .dop-menu {
+  width: 70px;
+}
+header .header-bottom .dop-menu .dop-menu-a {
+  position: relative;
+}
+header .header-bottom .dop-menu .dop-menu-a:before,
+header .header-bottom .dop-menu .dop-menu-a:after {
+  border-right: 1px solid;
+  content: "";
+  display: block;
+  height: 5px;
+  margin-top: -6px;
+  position: absolute;
+  transform: rotate(135deg);
+  right: -13px;
+  top: 70%;
+  width: 0;
+}
+header .header-bottom .dop-menu .dop-menu-a:after {
+  transform: rotate(45deg);
+  right: -10px;
+}
+header .header-bottom .dop-menu .sub-list {
+  width: 221px;
+  grid-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  margin: 14px 0px 0px 0px;
+  padding: 15px 10px 25px 10px;
+  border-radius: 15px;
+  position: absolute;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.06);
+}
+header .header-bottom .dop-menu .sub-list::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  width: 15.34px;
+  height: 15.34px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+header .header-bottom .dop-menu .sub-list a {
+  border-bottom: 2px solid rgba(0, 149, 15, 0);
+  transition: all 0.3s;
+}
+header .header-bottom .dop-menu .sub-list a:hover {
+  border-bottom: 2px solid rgba(1, 161, 17, 0.1);
+}
+
+footer {
+  margin-top: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top-logo a:nth-child(1) {
+  padding-bottom: 25px;
+}
+.footer-top-logo a:nth-child(2) {
+  font-size: 15px;
+  color: #000000;
+}
+
+.footer-top-links > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.footer-top-links > div:nth-child(1) a:nth-child(2) {
+  font-weight: 600;
+  text-decoration-line: underline;
+  margin: 5px 0px 20px 0px;
+  color: #00950f;
+}
+.footer-top-links > div:nth-child(1) a:nth-child(2):hover {
+  opacity: 0.6;
+}
+
+.footer-links-icon {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  grid-gap: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.footer-bottom a {
+  font-size: 13px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.footer-bottom a:hover {
+  opacity: 0.6;
+}
+
+.main-banner {
+  position: relative;
+}
+
+.main-banner-title {
+  width: 530px;
+  padding: 55px 0px 139px 70px;
+}
+.main-banner-title h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.main-banner-title span {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 30px 0px 10px 0px;
+}
+.main-banner-title button {
+  background: #ffbe18;
+  color: #000000;
+}
+
+.banner {
+  position: absolute;
+  top: 0px;
+  right: 10%;
+}
+
+.banner-container {
+  position: relative;
+}
+.banner-container > div:nth-child(1) {
+  display: flex;
+}
+.banner-container > div:nth-child(1) > div:nth-child(1) {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #ffbe18;
+}
+.banner-container > div:nth-child(1) > div:nth-child(1) img {
+  width: 50px;
+  height: 50px;
+  margin: auto auto;
+}
+.banner-container > div:nth-child(1) > div:nth-child(2) {
+  display: block;
+  width: 167px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  padding: 15px 37px 13px 28px;
+  background: #ffbe18;
+}
+.banner-container > div:nth-child(2) {
+  width: 206px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+  padding: 32px 12px 13px;
+}
